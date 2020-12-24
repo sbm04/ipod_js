@@ -11,3 +11,185 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/* card */
+.card
+{
+  width:150px;
+  background-color: white;
+  box-shadow:  white;
+  border: 2px red solid;
+  height: 200px;
+ 
+  
+}
+
+.card-list
+{
+  height: 30px;
+  margin-bottom: 10px;
+  width: 98%;
+  font-size: 25px;
+  font-weight: 300;
+ 
+}
+.title
+{
+  margin-top: 2%;
+  margin-bottom: 5%;
+  font-size:30px;
+  font-weight: bold;
+}
+.title-center
+{
+  margin-top: 10%;
+  margin-left: 32%;
+  text-align: center;
+  font-size:30px;
+  font-weight: bold;
+}
+.cardflow-title
+{
+  margin-top: 40%;
+  margin-left: 32%;
+  text-align: center;
+  font-size:30px;
+  font-weight: bold;
+}
+/* wheel container  */
+.wheel_container{
+  background: rgb(185 185 185);
+  height:180px;
+   width:180px;
+   position: relative;
+}
+.wheel_button{
+  background: rgb(255, 255, 255);
+  height:150px;
+  width:150px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+    
+}
+.enter-div{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+ border: 2px ;
+ height:130px;
+ width:130px;
+
+}
+.menu_button{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  border: 2px solid blueviolet;
+  width:128px;
+  height: 30px;
+  color: rgb(185 185 185);
+
+}
+.next_prev_button{
+  border: 2px solid rgb(43, 159, 226);
+  width:128px;
+  height: 60px;
+   
+}
+.play_pause_button{
+  border: 2px solid blueviolet;
+  width:128px;
+  height: 30px;
+}
+.next_prev_button{
+   display: flex;
+   justify-content: center;
+  align-items: center;
+}
+.small_circle{
+  background:rgb(185 185 185);
+  height: 51px;
+    width: 51px;
+  border-radius: 50%;
+ 
+}
+.backward{
+  margin: 0px 4px 0px 4px;
+}
+.small_circle{
+  margin: 0px 5px 0px 5px;
+}
+.forward{
+  margin: 0px 4px 0px 4px;
+}
+.play_pause_button{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.play_pause_button i{
+  font-size: 12px;
+}
+.wheel_button i{
+  color: rgb(185 185 185);
+}
+/* .back_forword{
+  /* /* height: 25px;
+  width:25px;
+  margin-right: 10px;  
+}  */
+/* screen-container */
+.screen-container{
+  border: 2px solid blueviolet;
+  width: 176px;
+  height: 208px;
+}
+/* MENU /////////////////////////////////////////////////////////////////////////////////////////////////// */
+.screen-menu {
+	width: 0%;
+	height: 100%;
+	position: absolute;
+	z-index: 5;
+	left: 0%;
+	background-color: white;
+	box-shadow: none;
+	overflow-x: hidden;
+	transition: width ease-in-out 0.2s;
+}
+
+.width-50 {
+	width: 50% !important;
+	box-shadow: 0px 0px 12px 1px rgb(82, 82, 82) !important;
+}
+
+.screen-menu > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 20%;
+	border: 1px solid rgb(190, 190, 190);
+	box-sizing: border-box;
+	white-space: nowrap; /* to turn off text wrapping in the screen menu */
+}
+
+.screen-menu p {
+	font-size: 20px;
+	overflow-wrap: normal;
+}
+
+.screen-menu > .selected {
+	background-color: rgb(89, 89, 255);
+}
+
+.app-logo {
+	background-color: #ff0053;
+	color: white;
+	font-size: large;
+}
