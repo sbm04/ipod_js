@@ -1,32 +1,31 @@
-import React from 'react';
-const WheelUi =(props)=>{
-    // function to handle wheel rotation
-    function handleWheelClick(e)
-    {
-        const {handleZesture}=props;
-        handleZesture(e);
-    }
+import React from 'react'
+
+
+const Setting =(props)=>
+{
+    const{ handleMenuClick}=props;
 
     // function to handle menu click 
-     function handlemenuClick(e)
+    const handleClick=()=>
     {
-        const {handleMenuClick}=props;
         handleMenuClick();
     }
+    return (
+       
+        <div className='card2'>
+             {/* rendering seetings  div  */}
+        <div className='settings-div'>
+             <span className='title-center'>Settings </span>
+            <div className='settings'>
+               
+            </div>
 
-    // function to hanlde enter click 
-    function handleEnterclick()
-    {
-        const{handleClick}=props;
-        handleClick();
-    }
-    return(
-
-        <div  className="wrapper_wheel_container">
-        <div className="wheel_container">
-                  <div  className="wheel_button" onClick={handleWheelClick}>
+        </div>
+         {/* wheel div  */}
+         <div className="wheel_container">
+                  <div  className="wheel_button" onClick={this.handleWheelClick}>
                    <div className="enter-div">
-                     <div className="menu_button" onClick={handlemenuClick} >
+                     <div className="menu_button" onClick={this.handlemenuClick} >
                          <span>
                              MENU
                          </span>
@@ -35,7 +34,7 @@ const WheelUi =(props)=>{
                          <div className="backward" >
                           <i class="fa fa-fast-backward" aria-hidden="true"></i>
                          </div>
-                        <div className="small_circle" onClick={handleEnterclick}>
+                        <div className="small_circle" onClick={this. handleEnterclick}>
 
                         </div>
                         <div className="forward">
@@ -52,8 +51,9 @@ const WheelUi =(props)=>{
                  </div>
               </div> 
         </div>
-    </div>   
+        
+      </div>
     )
 }
 
-export default WheelUi;
+export default Setting

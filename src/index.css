@@ -11,16 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
+/* .App{
+  margin: 0;
+  border: 2px rgb(14, 230, 25) solid;
+  height: 200px;
+  width: 150px;
+} */
 
 /* card */
 .card
 {
-  width:150px;
+  width:110px;
   background-color: white;
   box-shadow:  white;
-  border: 2px red solid;
-  height: 200px;
+  border: 2px rgb(14, 230, 25) solid;
+  height: 201px;
  
   
 }
@@ -58,10 +63,16 @@ code {
   font-weight: bold;
 }
 /* wheel container  */
+.wrapper_wheel_container{
+  border: 2px solid mediumblue;
+  position: absolute;
+  top: 54%;
+  left: 6%;
+}
 .wheel_container{
   background: rgb(185 185 185);
   height:180px;
-   width:180px;
+   width:198px;
    position: relative;
 }
 .wheel_button{
@@ -192,4 +203,31 @@ code {
 	background-color: #ff0053;
 	color: white;
 	font-size: large;
+}
+
+/* screen */
+
+.screen
+{
+  height: 205px;
+  width: 196px ;
+   margin-left: 7%;
+  border:2px solid black;
+  background-size: cover;
+}
+
+.screen1
+{
+  height: 413px;
+  width:230px;
+  padding-top: 12px;
+  border: 2px solid rgb(240, 71, 255);
+  margin-top: 10%;
+  margin-left:40%;
+  background-size: contain;
+  position: relative;
+}
+.active {
+  background: #2185d0 !important;
+  color: black;
 }
