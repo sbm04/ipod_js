@@ -1,4 +1,4 @@
-import {ProgressBar}  from 'react-bootstrap';
+
 
 const Song =()=>
 {
@@ -11,11 +11,13 @@ const Song =()=>
                     <p>Rock</p>
                
             </div>
-            <div >
+            <div className="music-player-buttton-container">
         
-        <progress className='prog' value="50" max="100"> 32% </progress>
-        <div><span className='right'>0:00</span> <span className='left'>5:0</span></div>
-    
+                    <div className="music-player-button">
+                         <span className='right'>0:00</span> 
+                         <progress className='prog' value="50" max="100"> 32% </progress>
+                         <span className='left'>5:0</span>
+                    </div>
             </div>
 
             </div>

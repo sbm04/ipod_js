@@ -1,5 +1,5 @@
 import React from 'react'
-
+import WheelUi from '../../wheelUi'
 import ZingTouch from 'zingtouch';
 import Song from './song';
 import Playlist from './playlist';
@@ -93,20 +93,37 @@ class Music  extends React.Component
     }
 
 
-    // function to handle enter click
-    handleEnter=()=>
+    // function to handle enter click 
+    handleClick=()=>
     {
-        this.setState({showMusicComponent:true});
+       
+        this.setState({showMusicComponent:true})
     }
 
-    //function to handle menu click
+    // function to handle menu click
+    handleMenuClick=()=>
+    {
+        this.setState({showMusicComponent:false})
+    }
+    // function to handle wheel rotation
+    handleWheelClick=(e)=>
+    {
+        const {handleZesture}=this.props;
+        handleZesture(e);
+    }
+
+    // function to handle menu click 
     handlemenuClick=()=>
-    {  
-        const{showMusicComponent}=this.state;
+    {
         const {handleMenuClick}=this.props;
-        if(!showMusicComponent) handleMenuClick();
-        else
-        this.setState({showMusicComponent:false});
+        handleMenuClick();
+    }
+
+    // function to hanlde enter click 
+    handleEnterclick=()=>
+    {
+        const{handleClick}=this.props;
+        handleClick();
     }
     
     render()
@@ -114,7 +131,7 @@ class Music  extends React.Component
 
 
         const {showArtist,showMusicComponent,showPlaylist,showSongs}=this.state;
-       // const {showMusicComponent}=this.props;
+       
         console.log('state',this.state);
         return (
 
@@ -136,12 +153,17 @@ class Music  extends React.Component
                  <div className={`card-list ${showPlaylist?'active':''}`}>
                  Playlist
                  </div>
- 
+                 <WheelUi
+
+                        handleZesture={this.handleZesture}
+                        handleMenuClick={this.handleMenuClick}
+                        handleClick={this.handleClick}
+                        />
                
                 
             </div>
                 }
-
+                
                 
                  
            

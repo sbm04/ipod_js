@@ -142,12 +142,12 @@ class App extends React.Component
             <div className='screen'>
             {
                     // rendering diffrent component based on conditions
-                     showCoponent?showCardflow?<CardFlow handleMenuClick={this.handleMenuClick}/> 
-                    
+                     showCoponent?showCardflow?<CardFlow handleZesture={this.handleZesture} handleMenuClick={this.handleMenuClick}/> 
                     :showGame? <Game handleZesture={this.handleZesture}
                     handleMenuClick={this.handleMenuClick}
                     handleClick={this.handleClick} handleMenuClick={this.handleMenuClick}/> 
-                    :<Settings  handleMenuClick={this.handleMenuClick}/> 
+                    :showMusic?<Music handleMenuClick={this.handleMenuClick}/>
+                    :<Settings  handleZesture={this.handleZesture} handleMenuClick={this.handleMenuClick}/> 
                      :
                      <div>
                      <Card 
@@ -160,6 +160,7 @@ class App extends React.Component
                      handleClick={this.handleClick}
                      />
                      <Wheelui
+
                         handleZesture={this.handleZesture}
                         handleMenuClick={this.handleMenuClick}
                         handleClick={this.handleClick}

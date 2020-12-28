@@ -1,5 +1,5 @@
 import React from 'react'
-
+import WheelUi from '../wheelUi'
 
 const CardFlow =(props)=>
 {
@@ -12,19 +12,22 @@ const CardFlow =(props)=>
     }
     return (
         <div>
-        <div className='settings-div'>
+        <div className='screen-coverflow'>
 
-           <br></br>
-           <br></br>
-           <br></br>
-           <br></br>
-           <br></br>
-           <br></br>
-           <br></br>
-           <span className='cardflow-title'>CardFlow</span>
+           
+           <span className='cardflow-title'>CardFlow </span>
+            <div>
+               
+            </div>
             
 
         </div>
+        <WheelUi
+
+        handleZesture={props.handleZesture}
+        handleMenuClick={props.handleMenuClick}
+        handleClick={props.handleClick}
+        />
         
         
      </div>
