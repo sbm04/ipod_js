@@ -4,12 +4,9 @@ import WheelUi from '../../wheelUi.js';
 
 const Game =(props)=>
 {
-    const{ handleMenuClick}=props;
-    // function to handle menu click 
-    const handleClick=()=>
-    {
-        handleMenuClick();
-    }
+    
+
+    
     return (<div className='card2'>
         {/* rendering games div  */}
         <div className='settings-div'>

@@ -12,6 +12,7 @@ class Music  extends React.Component
 
         // music state 
         this.state={
+            showCardflow:false,
             showArtist:false,
             showPlaylist:false,
             showSongs:false,
@@ -101,9 +102,21 @@ class Music  extends React.Component
     }
 
     // function to handle menu click
-    handleMenuClick=()=>
+    handleMenuClick1=()=>
     {
-        this.setState({showMusicComponent:false})
+       
+        const {showMusicComponent}=this.state;
+        if(showMusicComponent)
+        {
+            this.setState({showMusicComponent:false})
+        }
+        else{
+            const {handleMenuClick}=this.props;handleMenuClick()
+          
+        }
+       
+
+        
     }
     // function to handle wheel rotation
     handleWheelClick=(e)=>
@@ -112,12 +125,7 @@ class Music  extends React.Component
         handleZesture(e);
     }
 
-    // function to handle menu click 
-    handlemenuClick=()=>
-    {
-        const {handleMenuClick}=this.props;
-        handleMenuClick();
-    }
+  
 
     // function to hanlde enter click 
     handleEnterclick=()=>
@@ -139,7 +147,13 @@ class Music  extends React.Component
 
                 {/* // rendering diffrent component based on codition */}
                  
-                {showMusicComponent?showSongs?<div className='card2'><Song /></div>:showArtist?<div className='card2'><Artist /></div>:<div className='card2'><Playlist/></div>
+                {showMusicComponent?showSongs?<div className='card2'><Song   handleMenuClick1={this.handleMenuClick1}  handleZesture={this.handleZesture}
+                   
+                    handleClick={this.handleClick}  /></div>:showArtist?<div className='card2'><Artist   handleMenuClick1={this.handleMenuClick1}  handleZesture={this.handleZesture}
+                   
+                    handleClick={this.handleClick} /></div>:<div className='card2'><Playlist  handleMenuClick1={this.handleMenuClick1}  handleZesture={this.handleZesture}
+                   
+                    handleClick={this.handleClick} /></div>
                  : 
                 
                  <div className='card'>
@@ -156,7 +170,7 @@ class Music  extends React.Component
                  <WheelUi
 
                         handleZesture={this.handleZesture}
-                        handleMenuClick={this.handleMenuClick}
+                        handleMenuClick={this.handleMenuClick1}
                         handleClick={this.handleClick}
                         />
                

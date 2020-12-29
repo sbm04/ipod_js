@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from './components/card';
+
 import CardFlow from './components/cardflow';
 import Game from './components/game/games';
 import Settings from './components/setting/setting';
@@ -150,6 +151,7 @@ class App extends React.Component
                     :<Settings  handleZesture={this.handleZesture} handleMenuClick={this.handleMenuClick}/> 
                      :
                      <div>
+                         
                      <Card 
                      showCardflow={showCardflow} 
                      showGame={showGame}

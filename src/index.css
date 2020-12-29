@@ -26,7 +26,7 @@ code {
   border-radius: 7px;
   background: rgba(0,0,0,0.3);
   box-shadow:  rgb(161, 100, 100);
-  border: 2px rgb(14, 230, 25) solid;
+  /* border: 2px rgb(14, 230, 25) solid; */
   height: 204px;
  
   
@@ -62,7 +62,7 @@ code {
   width: 197px ;
   padding: 2px;
   background-image: url('./image/men.PNG');
-  border: 2px solid rgb(147, 0, 205);
+  /* border: 2px solid rgb(147, 0, 205); */
   background-size: cover;
   position: relative;
   
@@ -88,9 +88,12 @@ code {
   border-radius: 10px;
     background: -webkit-linear-gradient(rgb(221, 104, 215), rgb(37, 78, 80));
 }
+.settings-div i{
+  font-size: 20px;
+}
 /* wheel container  */
 .wrapper_wheel_container{
-  border: 2px solid rgb(147, 0, 205);
+  
   position: absolute;
   top: 54%;
   left: 6%;
@@ -127,20 +130,20 @@ code {
   justify-content: center;
   align-items: center;
   font-size: 14px;
-  border: 2px solid blueviolet;
+  border: 2px solid  rgb(255, 255, 255)t;
   width:128px;
   height: 30px;
   color: rgb(185 185 185);
 
 }
 .next_prev_button{
-  border: 2px solid rgb(43, 159, 226);
+  border: 2px solid rgb(255, 255, 255);
   width:128px;
   height: 60px;
    
 }
 .play_pause_button{
-  border: 2px solid blueviolet;
+  
   width:128px;
   height: 30px;
 }
@@ -241,7 +244,7 @@ code {
   
   background-image:url('./image/bg_img.PNG') ;
    margin-left: 7%;
-  border:2px solid black;
+  /* border:2px solid black; */
   background-size: cover;
   
 }
@@ -270,4 +273,70 @@ code {
 .active {
   background: rgba(0,0,0,0.4) !important;
   color: rgb(233, 226, 235);
+}
+/* music player button */
+.music-player-container{
+ width: 192px;
+    height: 202px;
+  position: relative;
+}
+.song-info{
+  position: absolute;
+  top: 40%;
+  /* border: 2px solid rgb(0, 225, 255) ; */
+  width: 80px;
+  height:40px;
+  margin:0;
+}
+.song-info h4{
+  margin: 0;
+ }
+.song-info p{
+ margin: 0;
+}
+.music-player-buttton-container
+{
+  position: absolute;
+  top: 85%;
+  right: 0%;
+  /* border: 2px solid blue ; */
+  width: 190px;
+  height: 30px;
+  display: inline;
+}
+.right{
+  font-size: 10px;
+}
+.left{
+  font-size: 10px;
+}
+.prog{
+  width: 147px;
+  /* border: 2px solid rgb(0, 255, 34) ; */
+}
+.audio-element-container{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 70%;
+  left: 44%;
+  border: 2px solid blue ;
+}
+.play-pause-player-button{
+  position: absolute;
+  display: inline;
+  
+  position: absolute;
+  top: 70%;
+  right: 33%;
+  width: 60px;
+  height: 30px;
+  /* border: 2px solid rgb(255, 0, 212) ; */
+}
+.button_icon{
+  border-radius: 50%;
+}
+.song_imG{
+  background-image: url('./image/playing.PNG');
+ 
 }

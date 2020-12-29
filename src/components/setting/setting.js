@@ -14,7 +14,7 @@ const Setting =(props)=>
         <div className='card2'>
              {/* rendering seetings  div  */}
             <div className='settings-div'>
-                <span className='title-center'>Settings </span>
+                <span className='title-center'><i class="fa fa-cogs" aria-hidden="true"> Setting</i></span>
                 <div className='settings'>
                 
                 </div>

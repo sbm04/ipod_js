@@ -21,7 +21,7 @@ const WheelUi =(props)=>{
         handleClick();
     }
     return(
-
+          //wheel container 
         <div  className="wrapper_wheel_container">
         <div className="wheel_container">
                   <div  className="wheel_button" onClick={handleWheelClick}>
